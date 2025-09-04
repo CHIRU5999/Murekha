@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "domain.dtd">
+<catalog>
+  <song id="s1" status="reviewed" explicit="no">
+    <title>Murekha Dawn</title>
+    <artist>murekha</artist>
+    <created>2025-09-01</created>
+    <duration unit="s">185</duration>
+    <tempo unit="bpm">96</tempo>
+    <loudness unit="LUFS">-14.5</loudness>
+    <model version="0.9.3">murekha-gen</model>
+    <genre>lofi</genre>
+    <genre>ambient</genre>
+    <notes>Intro swells, soft pads, low percussion.</notes>
+  </song>
+
+  <song id="s2" status="published" explicit="no">
+    <title>City Echoes</title>
+    <artist>murekha</artist>
+    <created>2025-09-02</created>
+    <duration unit="s">212</duration>
+    <tempo unit="bpm">120</tempo>
+    <loudness unit="LUFS">-13.0</loudness>
+    <model version="0.9.3">murekha-gen</model>
+    <genre>synthwave</genre>
+  </song>
+</catalog>

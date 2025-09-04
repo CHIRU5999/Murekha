@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "domain.dtd">
+<catalog>
+  <!-- BROKEN: missing required genre+ and wrong child order (model placed before loudness) -->
+  <song id="s3" status="draft" explicit="no">
+    <title>Missing Genre Example</title>
+    <artist>murekha</artist>
+    <created>2025-09-01</created>
+    <duration unit="s">200</duration>
+    <tempo unit="bpm">100</tempo>
+    <!-- Wrong order: model should come after loudness, but it's here -->
+    <model version="0.9.3">murekha-gen</model>
+    <loudness unit="LUFS">-15.2</loudness>
+    <!-- genre+ is REQUIRED but absent -->
+  </song>
+</catalog>

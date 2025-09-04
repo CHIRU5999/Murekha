@@ -1,0 +1,30 @@
+<!-- Minimal DTD for the "murekha" song-generation domain -->
+
+<!ELEMENT catalog (song+)>
+
+<!-- Fixed order of children; at least one <genre>; optional <notes> at end -->
+<!ELEMENT song (title, artist, created, duration, tempo, loudness, model, genre+, notes?)>
+
+<!ATTLIST song
+  id      ID                       #REQUIRED
+  status  (draft|reviewed|published) "draft"
+  explicit (yes|no)                #REQUIRED
+>
+
+<!ELEMENT title    (#PCDATA)>
+<!ELEMENT artist   (#PCDATA)>
+<!ELEMENT created  (#PCDATA)>   <!-- ISO date, e.g., 2025-09-01 -->
+<!ELEMENT duration (#PCDATA)>   <!-- numeric; seconds -->
+<!ATTLIST duration unit (s) "s">
+
+<!ELEMENT tempo    (#PCDATA)>   <!-- numeric; BPM -->
+<!ATTLIST tempo unit (bpm) "bpm">
+
+<!ELEMENT loudness (#PCDATA)>   <!-- numeric; LUFS (negative typical) -->
+<!ATTLIST loudness unit (LUFS) "LUFS">
+
+<!ELEMENT model    (#PCDATA)>   <!-- generator/model name -->
+<!ATTLIST model version CDATA #REQUIRED>
+
+<!ELEMENT genre    (#PCDATA)>
+<!ELEMENT notes    (#PCDATA)>
